@@ -1,7 +1,7 @@
 import React from "react";
 
 function MobileFooter() {
-  return <div>MobileFooter</div>;
+  return <div className="lg:hidden">MobileFooter</div>;
 }
 
 export default MobileFooter;

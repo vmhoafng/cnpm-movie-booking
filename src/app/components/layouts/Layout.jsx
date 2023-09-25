@@ -3,7 +3,7 @@ import DesktopNavbar from "../Navbar/DesktopNavbar";
 import MobileNavbar from "../Navbar/MobileNavbar";
 import DesktopFooter from "../Footer/DesktopFooter";
 import MobileFooter from "../Footer/MobileFooter";
-function mainLayout({ children }) {
+function Layout({ children }) {
   return (
     <div className="h-full">
       <DesktopNavbar />
@@ -15,4 +15,4 @@ function mainLayout({ children }) {
   );
 }
 
-export default mainLayout;
+export default Layout;

@@ -1,7 +1,7 @@
 import React from "react";
 
 function MobileNavbar() {
-  return <div>MobileNavbar</div>;
+  return <div className="lg:hidden">MobileNavbar</div>;
 }
 
 export default MobileNavbar;
