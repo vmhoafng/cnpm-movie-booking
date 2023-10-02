@@ -5,10 +5,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "primary": "#05113FCC",
-        "disabled": "#AA52A1",
-        "highlight": "#31D7A9",
-        "gradient":" linear-gradient(90deg, rgba(255, 67, 67, 0.85) 7.22%, #AA52A1 49.75%, #002DBB 100%)"
+        primary: "#05113FCC",
+        disabled: "#AA52A1",
+        highlight: "#31D7A9",
+        gradientStart: "rgba(255, 67, 67, 0.85)",
+        gradientMid: " #AA52A1",
+        gradientStop: "#002DBB",
       },
     },
   },
