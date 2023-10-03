@@ -21,6 +21,11 @@ function Button({ children, type, fullWidth, highlight, onClick, disabled }) {
       text-white
       shadow-md
       shadow-black/25
+      border-0
+      cursor-pointer
+      hover:opacity-90
+      transition-all
+      duration-200
       `,
         fullWidth && "w-full",
         disabled && "opacity-50 cursor-default",
@@ -31,7 +36,7 @@ function Button({ children, type, fullWidth, highlight, onClick, disabled }) {
     >
       <span
         className="
-          [text-shadow:1px_1px_2px_var(--tw-shadow-color)]
+          [text-shadow:0.5px_0.5px_1px_var(--tw-shadow-color)]
           shadow-black/50
           "
       >
