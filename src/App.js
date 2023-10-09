@@ -1,4 +1,3 @@
-import "./App.css";
 import Routes from "./app/routes/Routes";
 import Button from "./app/components/button/Button";
 import Search from "./app/components/inputs/Search";
