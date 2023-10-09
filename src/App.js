@@ -1,10 +1,10 @@
-import Routes from "./app/routes/Routes";
-import Button from "./app/components/button/Button";
+import './App.css';
+import Routes from './app/routes/Routes';
 function App() {
   return (
-    <div className="p-10">
+    <div className="bg-primary w-screen h-screen">
       <Routes />
-      <Button highlight disabled> Thanh Toan</Button>
+      <Search/>
     </div>
   );
 }
