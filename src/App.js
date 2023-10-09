@@ -1,11 +1,10 @@
 import Routes from "./app/routes/Routes";
 import Button from "./app/components/button/Button";
-import Search from "./app/components/inputs/Search";
 function App() {
   return (
-    <div className="bg-primary w-screen h-screen">
+    <div className="p-10">
       <Routes />
-      <Search/>
+      <Button highlight disabled> Thanh Toan</Button>
     </div>
   );
 }
