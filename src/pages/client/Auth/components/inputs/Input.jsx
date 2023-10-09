@@ -10,24 +10,12 @@ const Input = ({
   errors,
   disabled,
   placeholder,
-  borderWhite,
-  col,
 }) => {
   return (
-    <div
-      className={clsx(
-        `flex`,
-        col
-          ? "flex-col items-start gap-1"
-          : "items-center justify-between"
-      )}
-    >
-      <label
-        htmlFor={id}
-        className="text-white font-semibold leading-6 min-w-fit"
-      >
+    <div className={"flex flex-col items-start gap-3"}>
+      <label htmlFor={id} className="text-white/70 uppercase leading-8">
         {label}
-        {!col && ":"}
+        {required && <span className="text-red-500">*</span>}
       </label>
       <input
         id={id}
@@ -39,27 +27,22 @@ const Input = ({
           `
             form-input
             block
-            h-10
+            h-9
             min-w-[200px]
             w-full
-            rounded
-            border
-            px-4
+            border-b
+            pb-1
             shadow-sm
-            bg-white/10
+            bg-transparent
             outline-0
             text-white
             border-borderPrimary
-            placeholder:text-white/40
+            placeholder:text-borderPrimary
             selection:bg-highlight
             selection:text-primary
-            autofill:bg-highlight
-            autofill:text-primary
           `,
           // errors[id] && "focus:ring-rose-500",
-          borderWhite && "border-white/50",
-          disabled && "opacity-50 cursor-default",
-          !col && "max-w-lg"
+          disabled && "opacity-50 cursor-default"
         )}
       />
     </div>
