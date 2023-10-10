@@ -30,6 +30,7 @@ const Input = ({
             h-9
             min-w-[200px]
             w-full
+            border-0
             border-b
             pb-1
             shadow-sm
