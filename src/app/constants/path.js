@@ -3,6 +3,9 @@ export const ROUTE_PARAMS = {
 };
 
 export const PATHS = {
+	HOME: {
+		IDENTITY: '',
+	},
 	MOVIES: {
 		IDENTITY: 'movies',
 		LIST: '',

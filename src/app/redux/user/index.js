@@ -3,6 +3,7 @@ import { createSlice } from '@reduxjs/toolkit';
 // initial state
 const initialState = {
 	isAuthenticated: false,
+	role: '',
 };
 
 //create user slice

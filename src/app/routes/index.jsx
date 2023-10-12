@@ -6,8 +6,7 @@ import { PATHS } from '../constants/path';
 
 //Lazy loading pages
 const Movies = React.lazy(() => import('../../pages/Movie/List'));
-
-// import Movies from '../../pages/Movie/List';
+const MovieDetail = React.lazy(() => import('../../pages/Movie/Detail'));
 
 const loading = () => <div className="">loading</div>;
 
@@ -19,6 +18,11 @@ const LoadComponent = ({ component: Component }) => {
 	);
 };
 
+const homeRoute = {
+	path: PATHS.HOME.IDENTITY,
+	element: <></>,
+};
+
 const movieRoutes = {
 	path: PATHS.MOVIES.IDENTITY,
 	children: [
@@ -28,7 +32,7 @@ const movieRoutes = {
 		},
 		{
 			path: PATHS.MOVIES.DETAIL,
-			element: <></>,
+			element: <LoadComponent component={MovieDetail} />,
 		},
 	],
 };
@@ -38,7 +42,7 @@ function AllRoutes() {
 		{
 			path: '/',
 			element: <Layout />,
-			children: [movieRoutes],
+			children: [homeRoute, movieRoutes],
 		},
 		{
 			path: '/',
